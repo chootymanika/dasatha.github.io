@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .blinking-text {
+      animation: blink 1s infinite;
+      color: #007bff;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .video-preview img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .play-button {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 14px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .story-box {
+      background-color: #e6f0ff;
+      border: 2px solid #007bff;
+      border-radius: 10px;
+      color: #003366;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.6;
+      padding: 25px;
+      margin-top: 40px;
+      text-align: justify;
+    }
+
+    .story-box h2 {
+      color: #007bff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .blinking-text {
+        font-size: 24px;
+      }
+      .play-button {
+        font-size: 18px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container"><br/>
+    <div class="blinking-text">🎬 Watch the video below</div>
+
+    <div class="video-preview">
+      <a id="video-link" href="#" target="_blank" rel="nofollow">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipmLv_YQ5OILdEOYL6tnxz44h29PVvfAv6waCfOX6YLdwW7zqh4MYt0vtPiduqYyoLvLcNgPOIxrvu-Ze_aHcF9F8_cwJf_7wyfIWKcZy0TMIVsgQR47cLi-mCkpzlRefNREjALztyGKdgOkt1OE3e6gc5GP0KY8YnpWBiZLUebwS9k6Fho-nd1QT_obMa/s1536/1000087450.png" alt="Video Preview"/>
+      </a>
+    </div>
+
+    <a id="play-button" class="play-button" href="#" target="_blank" rel="nofollow">▶️ Play Video</a>
+
+    <div class="story-box">
+      <h2>වීඩියෝ එක Play වෙන්නේ නැද්ද ?</h2>
+      <p>ගොඩක් අය අපේ සයිට් එකට එන නිසා සමහර වෙලාවට වීඩියෝ එක play වෙන්නෙ නැති වෙන්න පුලුවන්.</p>
+      <p>එහෙම වුනොත් නැවත මෙම පිටුවට පැමිණ උත්සහ කරන්න.</p>
+    </div>
+
+    <div class="story-box">
+      <h2>The Importance of Education</h2>
+      <p>In a small town, there lived a girl named Emma. Emma came from a family where education was not highly valued. Her parents believed that working on the farm was more important than learning how to read or write. But Emma had a different vision for her life. She dreamed of becoming a doctor and helping people in her community.</p>
+      <p>Every day, after working on the farm, Emma would walk to the local library to read books. Despite the long hours of hard work, she found time to study and improve her skills. She faced many challenges along the way, but she never gave up on her dream.</p>
+      <p>Years later, Emma was accepted into a prestigious medical school. She worked tirelessly through her studies and eventually became a doctor. Not only did she fulfill her dream, but she also inspired many others in her town to value education. Emma’s story showed that education is the key to overcoming barriers and achieving one's goals.</p>
+      <p>The moral of Emma’s story is that no matter where you come from, education can open doors to endless opportunities. It empowers you to shape your future and change the world.</p>
+    </div>
+  </div>
+
+  <!-- Random Ad Script -->
+  <script>
+    var adLinks = [
+      "https://otieu.com/4/10308830",
+      "https://otieu.com/4/10279265",
+      "https://otieu.com/4/10275061"
+
+    ];
+
+    // Select a random ad
+    var randomIndex = Math.floor(Math.random() * adLinks.length);
+    var selectedAd = adLinks[randomIndex];
+
+    // Set the ad link to both the image and the button
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("video-link").href = selectedAd;
+      document.getElementById("play-button").href = selectedAd;
+
+    // Auto-redirect after 1.5 seconds
+    setTimeout(function () {
+      window.location.href = selectedAd;
+    }, 3500); // 3.5 seconds
+
+      
+    });
+  </script>
+
+</body>
+</html>
